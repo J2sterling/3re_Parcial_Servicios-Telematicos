@@ -919,7 +919,14 @@ Capturas deñ Despliegue
 
 
 
+**¿Qué aprendió al integrar Docker, AWS y Prometheus?**  
+Al integrar Docker, AWS y Prometheus aprendí la importancia de la automatización y el monitoreo continuo en entornos cloud. Docker permitió empaquetar la aplicación de forma consistente, AWS EC2 proporcionó la infraestructura escalable, y Prometheus junto con Node Exporter ofrecieron visibilidad completa del rendimiento del sistema. Esta integración demostró cómo un pipeline DevOps bien orquestado puede garantizar despliegues confiables y capacidad de diagnóstico rápido, esencial para mantener aplicaciones en producción con alta disponibilidad.
 
+**¿Qué fue lo más desafiante y cómo lo resolvería en un entorno real?**  
+Lo más desafiante fue resolver conflictos de puertos entre Apache y Docker, y configurar correctamente SSL con certificados autofirmados. En un entorno real, implementaría un balanceador de carga (AWS ALB) que maneje SSL en el edge, usaría ECS/EKS para orquestación de contenedores, y certificados Let's Encrypt para SSL válido. También configuraría un service discovery para que Prometheus detecte automáticamente los servicios, evitando configuraciones manuales propensas a errores.
+
+**¿Qué beneficio aporta la observabilidad en el ciclo DevOps?**  
+La observabilidad transforma el ciclo DevOps al proporcionar retroalimentación inmediata sobre el estado de la aplicación en producción. Permite detectar cuellos de botella antes que afecten a usuarios, facilita el debugging proactivo mediante métricas y alertas, y provee datos objetivos para decisiones de escalamiento. Esto reduce el tiempo medio de detección (MTTD) y resolución (MTTR) de incidentes, creando un ciclo de mejora continua donde cada despliegue es más confiable que el anterior.
 
 
 
